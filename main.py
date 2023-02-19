@@ -21,9 +21,9 @@ def find_mismatch(text):
 
 
 def main():
-    choice = input("Ievadiet F vai I: ")
+    choice = input("Choose input: ")
     if "F" in choice:
-        path = input("Ievadiet ceļu lidz failam: ")
+        path = input("Enter path to file: ")
         with open(path, "r") as file:
             text = file.read()
             mismatch = find_mismatch(text)
